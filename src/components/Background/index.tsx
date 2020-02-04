@@ -4,7 +4,7 @@ import styled from 'styled-components'
 
 const Wrapper = styled.div`
   position: absolute;
-  background-color: white;
+  background-color: #dfe6e9;
   z-index: -1;
   top: 0;
   left: 0;
