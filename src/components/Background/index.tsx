@@ -64,7 +64,7 @@ const Background = (): JSX.Element =>
         },
         line_linked: {
           enable: true,
-          distance: 150,
+          distance: 200,
           color: '#000000',
           opacity: 1,
           width: 1.5
