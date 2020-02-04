@@ -13,9 +13,14 @@ const Wrapper = styled.div`
   overflow: hidden;
 `
 
+const StyledParticles = styled(Particles)`
+  width: 100%;
+  height: 100%;
+`
+
 const Background = (): JSX.Element =>
   <Wrapper>
-    <Particles params={{
+    <StyledParticles params={{
       particles: {
         number: {
           value: 90,
