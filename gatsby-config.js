@@ -5,6 +5,14 @@ module.exports = {
     author: 'Erik S.'
   },
   plugins: [
+    {
+      resolve: 'gatsby-plugin-react-svg',
+      options: {
+        rule: {
+          include: '/src/images/svg'
+        }
+      }
+    },
     'gatsby-plugin-typescript',
     'gatsby-plugin-react-helmet',
     {

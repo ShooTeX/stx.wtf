@@ -4,7 +4,7 @@ import styled from 'styled-components'
 
 const Wrapper = styled.div`
   position: absolute;
-  background-color: #2c3e50;
+  background-color: white;
   z-index: -1;
   top: 0;
   left: 0;
@@ -25,7 +25,7 @@ const Background = (): JSX.Element =>
           }
         },
         color: {
-          value: '#ffffff'
+          value: '#000000'
         },
         shape: {
           type: 'circle',
@@ -38,10 +38,10 @@ const Background = (): JSX.Element =>
           }
         },
         opacity: {
-          value: 0.8,
+          value: 1,
           random: true,
           anim: {
-            enable: true,
+            enable: false,
             speed: 1,
             opacity_min: 0.1,
             sync: true
@@ -60,8 +60,8 @@ const Background = (): JSX.Element =>
         line_linked: {
           enable: true,
           distance: 150,
-          color: '#ffffff',
-          opacity: 0.4,
+          color: '#000000',
+          opacity: 1,
           width: 1.5
         },
         move: {
@@ -103,7 +103,7 @@ const Background = (): JSX.Element =>
             distance: 400,
             size: 40,
             duration: 2,
-            opacity: 8,
+            opacity: 1,
             speed: 3
           },
           repulse: {
