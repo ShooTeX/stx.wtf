@@ -5,6 +5,7 @@ import Seo from '../components/seo'
 import Background from '../components/Background'
 import LogoSvg from '../images/svg/logo.svg'
 import styled from 'styled-components'
+import { useSpring, animated, config } from 'react-spring'
 
 const Content = styled.div`
   display: flex;
@@ -13,18 +14,28 @@ const Content = styled.div`
   height: 100vh;
 `
 
-const Logo = styled.img`
+const Logo = styled(animated.img)`
   max-width: 200px;
   margin: 0;
 `
 
+const StyledLayour = styled(Layout)`
+  background-color: #dfe6e9;
+`
+
 const IndexPage = (): JSX.Element => {
+  const animation = useSpring({
+    config: config.molasses,
+    opacity: 1,
+    transform: 'scale(1)',
+    from: { opacity: 0, transform: 'scale(1.5)' },
+  })
   return (
     <Layout>
       <Seo title='Welcome' />
       <Background />
       <Content>
-        <Logo src={LogoSvg} alt='logo' />
+        <Logo style={animation} src={LogoSvg} alt='logo' />
       </Content>
     </Layout>
   )
