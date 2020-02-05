@@ -15,6 +15,7 @@ const Content = styled.div`
 
 const Logo = styled.img`
   max-width: 200px;
+  margin: 0;
 `
 
 const IndexPage = (): JSX.Element => {
