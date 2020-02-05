@@ -5,7 +5,7 @@ import { animated, useSpring, config } from 'react-spring'
 
 const Wrapper = styled(animated.div)`
   position: absolute;
-  background-color: #dfe6e9;
+  background-color: #fff;
   z-index: -1;
   top: 0;
   left: 0;
