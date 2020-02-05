@@ -123,7 +123,7 @@ const Background = (): JSX.Element =>
           }
         }
       },
-      retina_detect: true
+      retina_detect: false
     }}
     />
   </Wrapper>
