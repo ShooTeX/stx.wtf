@@ -11,16 +11,13 @@ const Content = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
 `
 
 const Logo = styled(animated.img)`
   max-width: 200px;
   margin: 0;
-`
-
-const StyledLayour = styled(Layout)`
-  background-color: #dfe6e9;
 `
 
 const IndexPage = (): JSX.Element => {

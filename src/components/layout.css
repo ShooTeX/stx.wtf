@@ -188,6 +188,7 @@ html {
   font: 112.5%/1.45em georgia, serif;
   box-sizing: border-box;
   overflow-y: auto;
+  height: 100%;
 }
 * {
   box-sizing: inherit;
@@ -204,10 +205,14 @@ body {
   font-weight: normal;
   word-wrap: break-word;
   font-kerning: normal;
+  height: 100%;
   -moz-font-feature-settings: "kern", "liga", "clig", "calt";
   -ms-font-feature-settings: "kern", "liga", "clig", "calt";
   -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
   font-feature-settings: "kern", "liga", "clig", "calt";
+}
+main {
+  height: 100%;
 }
 img {
   max-width: 100%;
