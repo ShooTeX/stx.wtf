@@ -23,6 +23,7 @@ const Logo = styled(animated.img)`
 `
 
 const SocialBar = styled(animated.div)`
+  font-family: Lexend Giga;
   margin-top: 10px;
   width: 200px;
   background-color: black;
@@ -65,6 +66,7 @@ const IndexPage = (): JSX.Element => {
         <Logo style={logoAnimation} src={LogoSvg} alt='logo' />
         <SocialBar style={socialBarAnimation}>
           {/* <img src={TwitterSvg}></img> */}
+          WELCOME
         </SocialBar>
       </Content>
     </Layout>
