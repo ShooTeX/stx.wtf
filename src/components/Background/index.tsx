@@ -26,20 +26,20 @@ const Background = (): JSX.Element => {
       <StyledParticles params={{
         particles: {
           number: {
-            value: 90,
+            value: 30,
             density: {
               enable: true,
-              value_area: 800
+              value_area: 900
             }
           },
           color: {
-            value: '#000000'
+            value: '#81ecec'
           },
           shape: {
             type: 'circle',
             stroke: {
               width: 0,
-              color: '#000000'
+              color: '#81ecec'
             },
             polygon: {
               nb_sides: 5
@@ -68,9 +68,9 @@ const Background = (): JSX.Element => {
           line_linked: {
             enable: true,
             distance: 200,
-            color: '#000000',
+            color: '#81ecec',
             opacity: 1,
-            width: 1.5
+            width: 1
           },
           move: {
             enable: true,
