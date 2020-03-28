@@ -5,7 +5,6 @@ import Seo from '../components/seo'
 import Background from '../components/Background'
 import LogoSvg from '../images/svg/logo.svg'
 import styled from 'styled-components'
-import UIfx from 'uifx'
 import { useSpring, useTrail, useChain, animated, config } from 'react-spring'
 import sound1 from '../sounds/welcome_stranger.mp3'
 import sound2 from '../sounds/welcome_stranger2.mp3'
@@ -61,7 +60,7 @@ const MenuItem = styled(Subline)`
   }
 `
 
-const SOUNDS = [new UIfx(sound1), new UIfx(sound2)]
+const SOUNDS = [new Audio(sound1), new Audio(sound2)]
 
 const IndexPage = (): JSX.Element => {
   const logoAnimationRef = useRef()
