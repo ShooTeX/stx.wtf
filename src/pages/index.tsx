@@ -14,7 +14,6 @@ const Content = styled.div`
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  min-height: -webkit-fill-available;
   flex-direction: column;
 `
 
