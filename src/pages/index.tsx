@@ -59,8 +59,6 @@ const MenuItem = styled(Subline)`
   }
 `
 
-const SOUNDS = [new Audio(sound1), new Audio(sound2)]
-
 const IndexPage = (): JSX.Element => {
   const logoAnimationRef = useRef()
   const logoAnimation = useSpring({
@@ -108,8 +106,6 @@ const IndexPage = (): JSX.Element => {
   })
 
   useChain([logoAnimationRef, sublineAnimationRef])
-
-  SOUNDS[Math.round(Math.random() * 1)].play()
 
   return (
     <Layout>
